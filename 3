@@ -1,0 +1,24 @@
+#include <iostream>
+
+int main() {
+    double distance;
+    double time_minutes, time_seconds;
+
+    std::cout << "Обчислення швидкості бігу.\n";
+
+    std::cout << "Введіть довжину дистанції (метрів): ";
+    std::cin >> distance;
+
+    std::cout << "Введіть час (хв.сек): ";
+    std::cin >> time_minutes >> time_seconds;
+
+    double time_seconds_total = time_minutes * 60 + time_seconds;
+
+    double speed_kph = (distance / 1000) / (time_seconds_total / 3600);
+
+    std::cout << "Дистанція: " << distance << " м.\n";
+    std::cout << "Час: " << time_minutes << " хв " << time_seconds << " сек = " << time_seconds_total << " сек.\n";
+    std::cout << "Ви бігли зі швидкістю " << std::fixed << speed_kph << " км/год.\n";
+
+    return 0;
+}
