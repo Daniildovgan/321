@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main() {
+    int days;
+    
+    std::cout << "Введіть кількість днів: ";
+    std::cin >> days;
+
+    int weeks = days / 7;
+    int remaining_days = days % 7;
+
+    std::cout << "Кількість повних тижнів: " << weeks << ", Днів, що залишилися: " << remaining_days << std::endl;
+
+    return 0;
+}
