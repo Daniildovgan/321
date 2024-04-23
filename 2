@@ -1,0 +1,15 @@
+#include <iostream>
+#include <iomanip>
+
+int main() {
+    double amount;
+    std::cout << "Введіть дробове число: ";
+    std::cin >> amount;
+
+    int hryvnia = static_cast<int>(amount);
+    int kopiyky = static_cast<int>((amount - hryvnia) * 100);
+
+    std::cout << "Грошовий формат: " << hryvnia << " грн. " << kopiyky << " коп." << std::endl;
+
+    return 0;
+}
