@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main() {
+    int hryvnia, kopiyka;
+    
+    std::cout << "Введіть кількість гривень: ";
+    std::cin >> hryvnia;
+
+    std::cout << "Введіть кількість копійок: ";
+    std::cin >> kopiyka;
+
+    if (kopiyka >= 100) {
+        hryvnia += kopiyka / 100;
+        kopiyka %= 100;
+    }
+
+    std::cout << "Коригована сума: " << hryvnia << " грн. " << kopiyka << " коп." << std::endl;
+
+    return 0;
+}
