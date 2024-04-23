@@ -1,0 +1,12 @@
+#include <iostream>
+
+int main() {
+    int seconds;
+    std::cout << "Введіть кількість секунд: ";
+    std::cin >> seconds;
+    int hours = seconds / 3600;
+    int minutes = (seconds % 3600) / 60;
+    int remaining_seconds = seconds % 60;
+    std::cout << "Годин: " << hours << ", Хвилин: " << minutes << ", Секунд: " << remaining_seconds << std::endl;
+    return 0;
+}
