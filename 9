@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+    double radius;
+    
+    std::cout << "Введіть радіус кулі: ";
+    std::cin >> radius;
+    
+    double volume = (4.0 / 3.0) * M_PI * pow(radius, 3);
+    
+    std::cout << "Об'єм кулі: " << volume << " куб. од." << std::endl;
+
+    return 0;
+}
