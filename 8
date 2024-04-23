@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main() {
+    double scale, distance_cm;
+    
+    std::cout << "Обчислення відстані між населеними пунктами.\n";
+    std::cout << "Введіть вихідні дані:\n";
+    
+    std::cout << "Масштаб карти (кількість кілометрів в одному сантиметрі) -> ";
+    std::cin >> scale;
+    
+    std::cout << "Відстань між точками, що зображують населені пункти (см) -> ";
+    std::cin >> distance_cm;
+    
+    double distance_km = scale * distance_cm / 100000;
+    
+    std::cout << "Відстань між населеними пунктами " << distance_km << " км." << std::endl;
+
+    return 0;
+}
